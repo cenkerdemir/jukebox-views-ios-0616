@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D3DF6411BC4116A0047AB5C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DF6401BC4116A0047AB5C /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		26183F618BCD43413737ED75 /* libPods-JukeboxViewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9ADE98083EE4C0EB92C6B6 /* libPods-JukeboxViewsTests.a */; };
+		4D3DF6411BC4116A0047AB5C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DF6401BC4116A0047AB5C /* Launch Screen.storyboard */; };
 		72DD191419A66296004F3C2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD191319A66296004F3C2F /* Foundation.framework */; };
 		72DD191619A66296004F3C2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD191519A66296004F3C2F /* CoreGraphics.framework */; };
 		72DD191819A66296004F3C2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD191719A66296004F3C2F /* UIKit.framework */; };
@@ -29,7 +30,10 @@
 		72DD195F19AE35DE004F3C2F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD195E19AE35DE004F3C2F /* AVFoundation.framework */; };
 		72F15A9319E71FF9008331A7 /* FISSongSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F15A9219E71FF9008331A7 /* FISSongSpec.m */; };
 		72F5811519E737430059B0B6 /* FISPlaylistSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5811419E737430059B0B6 /* FISPlaylistSpec.m */; };
-		836095CA0BA7143B33DEE520 /* libPods-JukeboxViewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D243E15CEC3F26D0618321C7 /* libPods-JukeboxViewsTests.a */; };
+		78625B9B1D1AA434001C709C /* FISSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 78625B9A1D1AA434001C709C /* FISSong.m */; };
+		78625B9E1D1AA646001C709C /* FISPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 78625B9D1D1AA646001C709C /* FISPlaylist.m */; };
+		78625BA71D1C6EEC001C709C /* FISJukeboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78625BA61D1C6EEC001C709C /* FISJukeboxViewController.m */; };
+		FE2815D25F2416EFAB115F21 /* libPods-JukeboxViews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515225E50A9DFB76B8AC9A97 /* libPods-JukeboxViews.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C9ADE98083EE4C0EB92C6B6 /* libPods-JukeboxViewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JukeboxViewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3DF6401BC4116A0047AB5C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		55CEF501CDA5DA8D0F8938FA /* Pods-JukeboxViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		618C04B2151A5A26B1487B1B /* Pods-JukeboxViewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		515225E50A9DFB76B8AC9A97 /* libPods-JukeboxViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JukeboxViews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72CC06085B64E5C98F441890 /* Pods-JukeboxViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		72DD191019A66296004F3C2F /* JukeboxViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JukeboxViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DD191319A66296004F3C2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72DD191519A66296004F3C2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,7 +76,15 @@
 		72DD195E19AE35DE004F3C2F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		72F15A9219E71FF9008331A7 /* FISSongSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSongSpec.m; sourceTree = "<group>"; };
 		72F5811419E737430059B0B6 /* FISPlaylistSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlaylistSpec.m; sourceTree = "<group>"; };
-		D243E15CEC3F26D0618321C7 /* libPods-JukeboxViewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JukeboxViewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78625B991D1AA434001C709C /* FISSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSong.h; sourceTree = "<group>"; };
+		78625B9A1D1AA434001C709C /* FISSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSong.m; sourceTree = "<group>"; };
+		78625B9C1D1AA646001C709C /* FISPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISPlaylist.h; sourceTree = "<group>"; };
+		78625B9D1D1AA646001C709C /* FISPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlaylist.m; sourceTree = "<group>"; };
+		78625BA51D1C6EEC001C709C /* FISJukeboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISJukeboxViewController.h; sourceTree = "<group>"; };
+		78625BA61D1C6EEC001C709C /* FISJukeboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISJukeboxViewController.m; sourceTree = "<group>"; };
+		99B18CF451718DF0D3ED59F3 /* Pods-JukeboxViewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCA99BE8B61141597B48AB64 /* Pods-JukeboxViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViews/Pods-JukeboxViews.debug.xcconfig"; sourceTree = "<group>"; };
+		E3CC0AE36236B46EE7301D73 /* Pods-JukeboxViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViews/Pods-JukeboxViews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +96,7 @@
 				72DD191619A66296004F3C2F /* CoreGraphics.framework in Frameworks */,
 				72DD191819A66296004F3C2F /* UIKit.framework in Frameworks */,
 				72DD191419A66296004F3C2F /* Foundation.framework in Frameworks */,
+				FE2815D25F2416EFAB115F21 /* libPods-JukeboxViews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,13 +107,24 @@
 				72DD193319A66296004F3C2F /* XCTest.framework in Frameworks */,
 				72DD193519A66296004F3C2F /* UIKit.framework in Frameworks */,
 				72DD193419A66296004F3C2F /* Foundation.framework in Frameworks */,
-				836095CA0BA7143B33DEE520 /* libPods-JukeboxViewsTests.a in Frameworks */,
+				26183F618BCD43413737ED75 /* libPods-JukeboxViewsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		408963F873A034E5E06C2CD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCA99BE8B61141597B48AB64 /* Pods-JukeboxViews.debug.xcconfig */,
+				E3CC0AE36236B46EE7301D73 /* Pods-JukeboxViews.release.xcconfig */,
+				72CC06085B64E5C98F441890 /* Pods-JukeboxViewsTests.debug.xcconfig */,
+				99B18CF451718DF0D3ED59F3 /* Pods-JukeboxViewsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		72DD190719A66296004F3C2F = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +132,7 @@
 				72DD193819A66296004F3C2F /* JukeboxViewsTests */,
 				72DD191219A66296004F3C2F /* Frameworks */,
 				72DD191119A66296004F3C2F /* Products */,
-				89BEC681C5A7B94675FA6A0B /* Pods */,
+				408963F873A034E5E06C2CD3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,7 +153,8 @@
 				72DD191519A66296004F3C2F /* CoreGraphics.framework */,
 				72DD191719A66296004F3C2F /* UIKit.framework */,
 				72DD193219A66296004F3C2F /* XCTest.framework */,
-				D243E15CEC3F26D0618321C7 /* libPods-JukeboxViewsTests.a */,
+				515225E50A9DFB76B8AC9A97 /* libPods-JukeboxViews.a */,
+				2C9ADE98083EE4C0EB92C6B6 /* libPods-JukeboxViewsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +165,12 @@
 				72DD192219A66296004F3C2F /* FISAppDelegate.h */,
 				72DD192319A66296004F3C2F /* FISAppDelegate.m */,
 				72DD192519A66296004F3C2F /* Main.storyboard */,
+				78625BA51D1C6EEC001C709C /* FISJukeboxViewController.h */,
+				78625BA61D1C6EEC001C709C /* FISJukeboxViewController.m */,
+				78625B9C1D1AA646001C709C /* FISPlaylist.h */,
+				78625B9D1D1AA646001C709C /* FISPlaylist.m */,
+				78625B991D1AA434001C709C /* FISSong.h */,
+				78625B9A1D1AA434001C709C /* FISSong.m */,
 				72DD192B19A66296004F3C2F /* Images.xcassets */,
 				4D3DF6401BC4116A0047AB5C /* Launch Screen.storyboard */,
 				72DD191A19A66296004F3C2F /* Supporting Files */,
@@ -190,15 +222,6 @@
 			name = songs;
 			sourceTree = "<group>";
 		};
-		89BEC681C5A7B94675FA6A0B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55CEF501CDA5DA8D0F8938FA /* Pods-JukeboxViewsTests.debug.xcconfig */,
-				618C04B2151A5A26B1487B1B /* Pods-JukeboxViewsTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72DD194219A66296004F3C2F /* Build configuration list for PBXNativeTarget "JukeboxViews" */;
 			buildPhases = (
+				10EB4B1D8CE41D95874F079F /* [CP] Check Pods Manifest.lock */,
 				72DD190C19A66296004F3C2F /* Sources */,
 				72DD190D19A66296004F3C2F /* Frameworks */,
 				72DD190E19A66296004F3C2F /* Resources */,
+				EBE1F9BA05E5078312D1C8E4 /* [CP] Embed Pods Frameworks */,
+				BE0D214E9622D898F660CCAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,11 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72DD194519A66296004F3C2F /* Build configuration list for PBXNativeTarget "JukeboxViewsTests" */;
 			buildPhases = (
-				B8CD8F192ACFBA908D6179C3 /* Check Pods Manifest.lock */,
+				5714AE7775F7D7E0657B68FD /* [CP] Check Pods Manifest.lock */,
 				72DD192D19A66296004F3C2F /* Sources */,
 				72DD192E19A66296004F3C2F /* Frameworks */,
 				72DD192F19A66296004F3C2F /* Resources */,
-				5EB406065D45DFAB98E04778 /* Copy Pods Resources */,
+				27771793FB71E959AD99724C /* [CP] Embed Pods Frameworks */,
+				CAE05AA195641C08A551E54B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,14 +329,74 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5EB406065D45DFAB98E04778 /* Copy Pods Resources */ = {
+		10EB4B1D8CE41D95874F079F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27771793FB71E959AD99724C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5714AE7775F7D7E0657B68FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0D214E9622D898F660CCAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JukeboxViews/Pods-JukeboxViews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAE05AA195641C08A551E54B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,19 +404,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8CD8F192ACFBA908D6179C3 /* Check Pods Manifest.lock */ = {
+		EBE1F9BA05E5078312D1C8E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JukeboxViews/Pods-JukeboxViews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -339,8 +426,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78625B9E1D1AA646001C709C /* FISPlaylist.m in Sources */,
 				72DD192019A66296004F3C2F /* main.m in Sources */,
 				72DD192419A66296004F3C2F /* FISAppDelegate.m in Sources */,
+				78625B9B1D1AA434001C709C /* FISSong.m in Sources */,
+				78625BA71D1C6EEC001C709C /* FISJukeboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +554,7 @@
 		};
 		72DD194319A66296004F3C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA99BE8B61141597B48AB64 /* Pods-JukeboxViews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -478,6 +569,7 @@
 		};
 		72DD194419A66296004F3C2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CC0AE36236B46EE7301D73 /* Pods-JukeboxViews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -492,7 +584,7 @@
 		};
 		72DD194619A66296004F3C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55CEF501CDA5DA8D0F8938FA /* Pods-JukeboxViewsTests.debug.xcconfig */;
+			baseConfigurationReference = 72CC06085B64E5C98F441890 /* Pods-JukeboxViewsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JukeboxViews.app/JukeboxViews";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -516,7 +608,7 @@
 		};
 		72DD194719A66296004F3C2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 618C04B2151A5A26B1487B1B /* Pods-JukeboxViewsTests.release.xcconfig */;
+			baseConfigurationReference = 99B18CF451718DF0D3ED59F3 /* Pods-JukeboxViewsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JukeboxViews.app/JukeboxViews";
 				FRAMEWORK_SEARCH_PATHS = (
